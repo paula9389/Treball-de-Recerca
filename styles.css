@@ -1,0 +1,200 @@
+/* Estilos generales */
+body {
+  background-color: #fff8f0;
+  color: #3b2f2f;
+  font-family: 'Onest', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Bodoni FLF', serif;
+  color: #4d2600;
+}
+
+/* Banner */
+.header-banner {
+  background-image: url('banner_africa.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background-color: rgba(255, 244, 229, 0.85);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.banner-overlay h1,
+.banner-overlay p {
+  color: #3b2f2f;
+  font-family: 'Bodoni FLF', serif;
+  margin: 0;
+}
+
+.banner-overlay h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* Navegación */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #f3e6d5;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin: 20px 0 0 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4d2600;
+  font-family: 'Bodoni FLF', serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4a373;
+}
+
+/* Contenedor de regiones */
+.regions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+}
+
+/* Estilos específicos para África Austral */
+.africa-austral .region {
+  width: 26%;
+  text-align: center;
+  margin: 10px 1.5%;
+}
+
+.africa-austral .region img {
+  width: 140px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.africa-austral .region:hover img {
+  transform: scale(1.05);
+}
+
+/* Link dentro de cada región */
+.region a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+  .africa-austral .region {
+    width: 40%;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .africa-austral .region {
+    width: 70%;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .africa-austral .region {
+    width: 95%;
+  }
+}
+
+/* CONTENEDOR PADRE (suponiendo que es .africa-austral main) */
+.africa-austral main {
+  max-width: 1200px;         /* ancho máximo centrado */
+  margin: 20px auto;         /* margen arriba/abajo y centrado horizontal */
+  padding: 0 40px;           /* margen a los lados */
+  
+  column-count: 3;           /* número de columnas */
+  column-gap: 40px;          /* espacio horizontal entre columnas */
+}
+
+.africa-austral main section {
+  box-sizing: border-box;
+  min-width: 200px;
+  background-color: #fff8f0;
+  border: 1.5px solid #d4b06d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+  break-inside: avoid;       /* evita que las cajas se rompan entre columnas */
+  margin-bottom: 30px;       /* espacio vertical entre cajas */
+  
+  /* ancho flexible, el ancho lo define la columna */
+  width: 100%;               
+  display: inline-block;     /* para que tome el ancho del contenedor de columna */
+}
+
+.africa-austral main section:hover {
+  transform: translateY(-4px);
+}
+
+.africa-austral main section h2 {
+  font-family: 'Bodoni FLF', serif;
+  font-size: 1.6em;
+  margin-top: 0;
+  color: #4d2600;
+}
+
+/* Només per la pàgina d’Àfrica Austral */
+.africa-austral .cuadro {
+  background-color: #f3e6d5;         /* Color de fons que has demanat */
+  border: 2px solid #ccc;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Onest', sans-serif;  /* Manté la font original */
+  line-height: 1.6;
+}
+
+/* NOMÉS per les imatges com botswana.png, namibia.png, etc. */
+
+.africa-austral img[src*="sudafrica.png"]
+.africa-austral img[src*="botswana.png"],
+.africa-austral img[src*="namibia.png"],
+.africa-austral img[src*="swazilandia.png"],
+.africa-austral img[src*="lesotho.png"] {
+  transition: transform 0.3s ease;
+}
+
+.africa-austral img[src*="sudafrica.png"]:hover
+.africa-austral img[src*="botswana.png"]:hover,
+.africa-austral img[src*="namibia.png"]:hover,
+.africa-austral img[src*="swazilandia.png"]:hover,
+.africa-austral img[src*="lesotho.png"]:hover {
+  transform: scale(1.05);
+}
+
+
+

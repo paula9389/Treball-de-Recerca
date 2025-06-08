@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Àfrica Austral</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+
+    .banner-overlay p {
+      font-family: 'Onest', sans-serif;
+    }
+
+    .paisos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .region {
+      display: inline-block;
+      width: 45%;
+      padding: 10px;
+      background-color: #f3e6d5;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      vertical-align: top;
+    }
+
+    .region img {
+      max-width: 70%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .region h2 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 18px;
+    }
+
+    .region p {
+      font-size: 14px;
+      color: #3b2f2f;
+    }
+
+    @media (min-width: 768px) {
+      .region {
+        width: 30%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .paisos {
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body class="africa-austral">
+  <div class="header-banner">
+    <div class="banner-overlay">
+      <h1>Àfrica Austral</h1>
+      <p>Fes clic a cada país per descobrir les danses i algunes curiositats sobre la seva cultura.</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <section class="cuadro">
+    <h2>Àfrica Austral</h2>
+    <p>
+      L’Àfrica Austral és una regió rica en diversitat cultural i expressiva. Les seves danses barregen moviments tradicionals amb influències modernes, mostrant la vitalitat de les comunitats que les practiquen.
+      Des de rituals espirituals fins a coreografies urbanes contemporànies, la dansa és una part essencial de la vida quotidiana i les celebracions locals.
+    </p>
+  </section>
+
+  <section class="paisos">
+    <div class="region">
+      <a href="sudafrica.html">
+        <img src="sudafrica.png" alt="Sud-àfrica" />
+        <h2>Sud-àfrica</h2>
+      </a>
+      <p>
+        A Sud-àfrica existeixen moltes danses, des de les tradicionals com la <strong>Gumboot Dance</strong> fins a estils urbans com el <strong>Pantsula</strong> o l'<strong>Amapiano</strong>. 
+        A més, artistes internacionals com <strong>Tyla</strong> han portat aquests ritmes arreu del món.  
+        <br><strong>Sabies que</strong> la dansa gumboot va sorgir a les mines com una forma de comunicació secreta entre treballadors?
+      </p>
+    </div>
+
+    <div class="region">
+      <a href="lesotho.html">
+        <img src="lesotho.png" alt="Lesotho" />
+        <h2>Lesotho</h2>
+      </a>
+      <p>
+        A Lesotho, les danses reflecteixen l’esperit de comunitat i les tradicions dels Basotho. Utilitzen robes típiques i moviments circulars per a celebrar esdeveniments com matrimonis o cerimònies d’iniciació.
+      </p>
+    </div>
+
+    <div class="region">
+      <a href="swazilandia.html">
+        <img src="swazilandia.png" alt="Swazilàndia" />
+        <h2>Swazilàndia</h2>
+      </a>
+      <p>
+        A Eswatini (Swazilàndia), destaca la <strong>Umhlanga</strong> o dansa del jonc, on milers de dones joves ballen en honor a la reina mare. És una cerimònia plena de simbolisme i orgull nacional.
+      </p>
+    </div>
+
+    <div class="region">
+      <a href="namibia.html">
+        <img src="namibia.png" alt="Namíbia" />
+        <h2>Namíbia</h2>
+      </a>
+      <p>
+        A Namíbia conviuen molts grups ètnics, i cadascun té la seva pròpia expressió corporal. Les danses dels <strong>Himba</strong> o dels <strong>San</strong> incorporen gestos rituals i relats orals en el moviment.
+      </p>
+    </div>
+
+    <div class="region">
+      <a href="botswana.html">
+        <img src="botswana.png" alt="Botswana" />
+        <h2>Botswana</h2>
+      </a>
+      <p>
+        Les danses de Botswana són energètiques i sovint acompanyades de percussió i cant. La <strong>Setapa</strong> és una de les més representatives, amb salts i ritmes que expressen alegria i força comunitària.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+

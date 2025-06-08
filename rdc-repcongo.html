@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sud-Àfrica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    /* Nou estil per a les caixes */
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    /* Grid layout per les seccions dins main */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+  .intro-video {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
+    }
+
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Rep. Decomcràtica del Congo i Rep. del Congo</h1>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+  <main>
+    <div class="grid-layout">
+
+      <!-- Context sobre la dansa -->
+      <section class="box">
+        <p>
+          A la República Democràtica del Congo i la República del Congo, la dansa és una expressió fonamental de la vida quotidiana i cultural. S’utilitza en celebracions, rituals, protestes i actes socials. La música i la dansa han estat eines poderoses per a la comunicació i la resistència, especialment en contextos colonials i post-colonials.
+        </p>
+      </section>
+
+      <!-- Danses principals -->
+      <section class="box">
+        <h2>Danses principals del país</h2>
+        <ul>
+          <li><strong>Ndombolo</strong> – Dansa moderna originada a la RDC, vinculada a la música soukous. Coneguda per moviments de malucs ràpids i enèrgics, ha esdevingut molt popular arreu d’Àfrica.</li>
+          <figure>
+            <img src="ndombolo.png" alt="Dansa Ndombolo">
+            <figcaption>Dansa Ndombolo</figcaption>
+          </figure>
+
+          <li><strong>Soukous</strong> – Més que una dansa, és un gènere musical que inspira moviments àgils, circulars i sensuals. Té arrels en el rumba congolesa i s’ha estès internacionalment.</li>
+          <figure>
+            <img src="soukous.png" alt="Dansa Soukous">
+            <figcaption>Dansa Soukous</figcaption>
+          </figure>
+        </ul>
+      </section>
+
+      <!-- Difusió i impacte -->
+      <section class="box">
+        <p>
+          Les danses congoleses han influenciat nombroses escenes urbanes a l’Àfrica i a la diàspora. Ndombolo, en particular, ha estat adoptada per joves arreu del continent, amb coreografies virals i esdeveniments de ball a xarxes socials. Alhora, aquestes danses mantenen vincles amb la tradició i les arrels comunitàries.
+        </p>
+      </section>
+
+<!-- Pas treballat -->
+<section class="box">
+  <h2>Pas treballat</h2>
+  <article>
+    <h3>Tindika Lokito</h3>
+    <p>
+      Aquest pas emblemàtic de la dansa Ndombolo consisteix a moure els malucs de forma circular i intensa mentre es mantenen els genolls lleugerament flexionats. Es realitza amb energia i carisma, i sovint es combina amb girs o moviments de braços.
+    </p>
+   <div class="youtube-video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/UrKLgYuPCB4" 
+              title="Tindika" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </article>
+</section>
+
+      <!-- Impacte cultural -->
+      <section class="box">
+        <h2>Impacte cultural</h2>
+        <p>
+          Aquests estils de dansa no només representen entreteniment, sinó també identitat, resistència i comunitat. A les dues Repúbliques del Congo, les danses com el Ndombolo s’han convertit en símbols de creativitat urbana i orgull cultural. Els artistes locals continuen reinterpretant-les i exportant-les a escenaris internacionals.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="contacte">
+    <p>Web creada per al TDR © 2025</p>
+  </footer>
+
+</body>
+</html>

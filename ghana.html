@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ghana</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    /* Nou estil per a les caixes */
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    /* Grid layout per les seccions dins main */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+ 
+    footer {
+      background-color: #4d2600;
+      color: #fff4e5;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: 'Onest', sans-serif;
+      font-size: 0.9em;
+      border-top: 2px solid #d1bfa7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Ghana</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+  <main>
+    <div class="grid-layout">
+
+      <!-- Context inicial -->
+      <section class="box">
+        <p>
+          Ghana és un país on la música i la dansa són fonamentals per entendre la identitat col·lectiva. Les danses formen part de celebracions, rituals i cerimònies, i transmeten història i valors de diverses comunitats.
+        </p>
+      </section>
+
+      <!-- Danses principals -->
+      <section class="box">
+        <h2>Danses principals</h2>
+
+        <article>
+          <h3>Adowa</h3>
+          <p>
+            Originària del poble Ashanti, l’Adowa combina moviments subtils de braços i cames amb salts i girs. Ballada en funerals, cerimònies reials i esdeveniments Akan, els ballarins vesteixen teles Kente i joies elaborades.
+          </p>
+          <figure>
+            <img src="adowa.jpg" alt="Dansa Adowa">
+            <figcaption>Conjunt d’Adowa amb vestimenta Kente</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Bamaya</h3>
+          <p>
+            Procedent de la regió de Dagbon, la Bamaya és ballada per homes vestits amb roba femenina per invocar la pluja i la fertilitat. Es mouen en cercle, amb passos de peus rítmics i girs de cintura, acompanyats de tambors i cants.
+          </p>
+          <figure>
+            <img src="bamaya.jpg" alt="Dansa Bamaya">
+            <figcaption>Ballarins de la Bamaya amb vestits tradicionals</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Azonto</h3>
+          <p>
+            Ball urbà nascut a Accra, amb moviments de mans que imiten activitats quotidianes (rentat, conduir, etc.). Popularitzat amb la cançó “Azonto” de Fuse ODG, es practica informalment en festes i clubs amb vestimenta moderna.
+          </p>
+          <figure>
+            <img src="azonto.jpg" alt="Dansa Azonto">
+            <figcaption>Ballarins fent moviments d’Azonto</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Alkayida</h3>
+          <p>
+            Evolució de l’Azonto, amb moviments d’espatlles i inclinacions de costat a costat. Popularitzat el 2013 amb la cançó “Alkayida (Boys Abrɛ)” de Guru, es balla en discoteques i festes urbanes amb estil informal.
+          </p>
+          <figure>
+            <img src="alkayida.jpg" alt="Dansa Alkayida">
+            <figcaption>Ballarines interpretant l’Alkayida</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Pampana</h3>
+          <p>
+            Creada el 2022 pel coreògraf Ricky Sauce, es va fer viral el 2024 amb la cançó “Enter”. Combina elements de Shaku Shaku, Sweet Mother, Policier i Network. S’ha convertit en part essencial de casaments i festes familiars a Ghana.
+          </p>
+          <figure>
+            <img src="pampana.png" alt="Dansa Pampana">
+            <figcaption>Ricky Sauce ballant el Pampana</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- Passos treballats -->
+      <section class="box">
+        <h2>Passos treballats</h2>
+
+        <article>
+          <h3>Pilolo</h3>
+          <p>
+            Moviment vinculat a l’afro dance, creat per Incredible Zigi. Consisteix a aixecar una cama a 90° amb girs ràpids i rebots del cos. Popularitzat a xarxes socials i utilitzat en concursos de dansa.
+          </p>
+<div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/1uRN6uOC4iA" 
+      title="Vosho" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+        <article>
+          <h3>Kupe</h3>
+          <p>
+            Creat també per Incredible Zigi, es caracteritza per posar-se de puntetes, girar les cames i fer un gest de pau amb la mà. Viral gràcies al #KupeChallenge a TikTok i inclòs en NBA 2K20.
+          </p>
+<div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YwNrkv99RXo" 
+      title="Vosho" frameborder="0" allowfullscreen></iframe>
+  </div>
+        </article>
+
+        <article>
+          <h3>Network</h3>
+          <p>
+            Moviment d’espatlles i malucs creat per Incredible Zigi durant el confinament. Es fa un pas lateral amb balanceig de malucs i moviments de turmells, acompanyat de tutorials en línia.
+          </p>
+         <div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/EAP0w4qFdsY" 
+      title="Vosho" frameborder="0" allowfullscreen></iframe>
+  </div>
+<figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+        </article>
+      </section>
+
+      <!-- Impacte cultural -->
+      <section class="box">
+        <h2>Impacte cultural</h2>
+        <p>
+          Les danses ghaneses, des de l’Adowa fins a l’afro dance moderna, mantenen vives les tradicions i construeixen una memòria col·lectiva. Els passos virals han portat la cultura ghanesa a un públic global, mentre festivitats tradicionals conserven la seva essència ancestral.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Web creada per al TDR © 2025</p>
+  </footer>
+</body>
+</html>

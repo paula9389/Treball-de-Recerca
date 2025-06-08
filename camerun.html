@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camerun</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+ @font-face {
+  font-family: 'Bodoni FLF';
+  src: url('BodoniFLF-Roman.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Onest', sans-serif;
+  color: #3b2f2f;
+  line-height: 1.6;
+  background-color: #fff;
+   }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    /* Nou estil per a les caixes */
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    /* Grid layout per les seccions dins main */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .intro-video {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
+    }
+
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #4d2600;
+      color: #fff4e5;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: 'Onest', sans-serif;
+      font-size: 0.9em;
+      border-top: 2px solid #d1bfa7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Camerun</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <div class="grid-layout">
+
+    <!-- Context sobre la dansa al país -->
+    <section class="box">
+      <p>
+        A Camerun, la dansa és una part fonamental de la vida quotidiana i les tradicions. Està profundament arrelada als rituals, les cerimònies, les celebracions religioses i els esdeveniments socials. Les danses s’acompanyen sovint amb tambors i instruments tradicionals, i moltes tenen significat espiritual o comunitari.
+      </p>
+    </section>
+
+    <!-- Danses principals -->
+    <section class="box">
+      <h2>Danses principals del país</h2>
+      <ul>
+        <li><strong>Assiko</strong> – Dansa àgil i rítmica del sud de Camerun, que es balla amb passos ràpids i expressius. S'acompanya amb guitarra i percussió, i sol expressar alegria i llibertat.</li>
+        <figure>
+         <img src="assiko.png" alt="Dansa Assiko">
+      <figcaption>Dansa Assiko</figcaption>
+    </figure> 
+
+        <li><strong>Bikutsi</strong> – Originària del poble Beti, aquesta dansa és sensual i enèrgica, amb un fort component de percussió. El seu nom significa literalment “colpejar la terra”.</li>
+        <figure>
+         <img src="bikutsi.png" alt="Dansa Bikutsi">
+      <figcaption>Dansa Bikutsi</figcaption>
+    </figure>  
+     </ul> <!-- <- CAL TANCAR AQUESTA UL ABANS DE LA NOVA SECCIÓ -->
+    </section> 
+      
+         <section class="box">
+      <h2>Danses extres</h2>
+      <ul>
+        <li><strong>Lali</strong> – Dansa guerrera i ritual que utilitza tambors del mateix nom; es balla per comunicar missatges i durant cerimònies importants.</li>
+
+        <li><strong>Ngondo</strong> – Pròpia de la comunitat Sawa, forma part d’un festival cerimonial que celebra la connexió amb els ancestres i els esperits del riu.</li>
+  </ul>
+</section>
+
+    <!-- Difusió i impacte -->
+    <section class="box">
+      <p>
+        Les danses cameruneses continuen formant part de festivals, cerimònies i celebracions locals. Algunes, com el Bikutsi, han influenciat escenes musicals modernes i han estat portades als escenaris internacionals. Tanmateix, moltes es mantenen dins de contextos tradicionals i familiars, contribuint a la preservació de la identitat cultural.
+      </p>
+    </section>
+
+    <!-- Passos treballats -->
+    <section class="box">
+      <h2>Passos</h2>
+      <article>
+        <p>
+          En el cas de Camerun, no s’ha identificat cap pas concret amb nom propi que sigui reconegut àmpliament més enllà del seu context local o comunitari. Les danses es transmeten de manera oral i pràctica dins de cada ètnia, i sovint no es codifiquen com a “passos” independents. Per això, en aquesta secció no s’inclou cap pas concret.
+        </p>
+      </article>
+    </section>
+
+    <!-- Impacte cultural -->
+    <section class="box">
+      <h2>Impacte cultural</h2>
+      <p>
+        La dansa a Camerun forma part essencial de la vida comunitària i espiritual. Malgrat la globalització, moltes danses tradicionals es mantenen vives gràcies a la seva funció social i ritual. Les escoles i festivals locals contribueixen a preservar-les, i la música popular també ha ajudat a donar-les a conèixer més enllà de les fronteres.
+      </p>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+      <p>Web creada per al TDR © 2025</p>
+  </footer>
+</body>
+</html>

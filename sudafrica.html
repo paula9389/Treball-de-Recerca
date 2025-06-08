@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sud-Àfrica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    /* Nou estil per a les caixes */
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    /* Grid layout per les seccions dins main */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .intro-video {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
+    }
+
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Sud-Àfrica</h1>
+    </div>
+  </header>
+
+   <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <div class="grid-layout">
+
+
+      <!-- Danses principals -->
+      <section>
+        <h2>Danses principals del país</h2>
+        <ul>
+          <li><strong>Gumboot</strong> – Dansa de percussió corporal nascuda a les mines d’or, on els treballadors es comunicaven colpejant les seves botes de goma; avui simbolitza resistència i ha passat de l’àmbit miner a les escoles i escenaris teatrals.</li>
+          <figure>
+            <img src="gumboot.jpg" alt="Dansa Gumboot">
+            <figcaption>Dansa Gumboot a Sud-àfrica</figcaption>
+          </figure>
+
+          <li><strong>Indlamu</strong> – Dansa tradicional zulú, amb moviments vibrants d’estampació del peu i salts, originària de ritus guerrers i festivals; està associada a vestimentes amb pells, plomes, escuts i llances.</li>
+          <figure>
+            <img src="indlamu.jpg" alt="Dansa Indlamu">
+            <figcaption>Dansa Indlamu tradicional</figcaption>
+          </figure>
+
+          <li><strong>Xibelani</strong> – La Xibelani és una dansa on les dones utilitzen faldilles “tinguvu” que accentuen el moviment de malucs; acompanya celebracions de comunitat i rituals de pas de jovent.</li>
+          <figure>
+            <img src="xibelani.png" alt="Dansa Xibelani">
+            <figcaption>Dansa Xibelani amb faldilles tinguve</figcaption>
+          </figure>
+
+          <li><strong>Tsuana</strong> – Dansa de la tribu Tswana (Botswana i Sud-àfrica) que combina moviments de peus i malucs, representant històricament celebracions de vida, casaments i funerals.</li>
+          <figure>
+            <img src="tsuana.png" alt="Dansa Tsuana">
+            <figcaption>Dansa Tswana tradicional</figcaption>
+          </figure>
+
+          <li><strong>Pantsula</strong> – Dansa urbana de barris de Johannesburg, nascuda sota l’apartheid; barreja claqué, jive i Gumboot i s’ha convertit en símbol de protesta, comunitat i expressió urbana.</li>
+          <figure>
+            <img src="pantsula.jpg" alt="Dansa Pantsula">
+            <figcaption>Dansa Pantsula als carrers de Johannesburg</figcaption>
+          </figure>
+        </ul>
+      </section>
+
+      <!-- Difusió / Impacte (sense títol) -->
+      <section>
+        <p>
+          Moltes d’aquestes danses han deixat d’estar restringides a comunitats rurals i rituals locals per convertir-se en icones internacionals. El Gumboot, per exemple, ha arribat a escoles i festivals, on artistes i estudiants l’utilitzen com a recurs pedagògic i turístic. El Pantsula i el Gwara Gwara han transcendit fronteres a través de vídeos en xarxes socials i videoclips musicals, influenciant artistes de renom mundial. Avui dia, tant a cerimònies tradicionals com a estudis de dansa urbana, aquestes expressions es mantenen vives i adaptades a nous contextos.
+        </p>
+      </section>
+
+       <!-- Passos treballats -->
+      <section>
+        <h2>Passos treballats</h2>
+
+        <article>
+          <h3>Dakiwe</h3>
+          <p>
+            Pas popular arran del “Dawike Challenge”, impulsat per la DJ sud-africana DBN Gogo. Prové del zulú i significa “estar borratxo” o “marejat”, reproduint visualment la inestabilitat d’una persona que va d’un costat a l’altre, combinant inclinació del tronc, cames flexionades i braços estesos en un moviment semicircular.
+          </p>
+          <div class="youtube-video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8dKkFXF1rbE" 
+              title="Vosho" frameborder="0" allowfullscreen></iframe>
+          </div>
+<figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+
+        </article>
+
+        <article>
+          <h3>Vosho</h3>
+          <p>
+            Pas associat al gènere Gqom, caracteritzat per ajupir-se mentre s’aixeca una cama i es trepitja el terra amb força; els braços acompanyen amb moviments acrobàtics, i el ballador manté un ritme energètic i explosiu. Ha aparegut en videoclips d’artistes com Sho Madjozi i a COLORSxSTUDIOS.
+          </p>
+          <div class="youtube-video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/t8MWAggXBQ0" 
+              title="Vosho" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article>
+          <h3>Gwara Gwara</h3>
+          <p>
+            Moviment creat el 2016 pels DJs sud-africans Bongz i Bongekile Simelane; consisteix a balancejar un braç formant un cercle mentre una cama es desplaça seguint el ritme. Connecta moviments fluïts de part superior i inferior, recordant l’estil “Stanky Legg”. Ha estat portat per Rihanna i Childish Gambino en grans esdeveniments musicals.
+          </p>
+          <div class="youtube-video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tQW9Yz31whY" 
+              title=Gwara" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </article>
+      </section>
+
+    </div> <!-- fi grid-layout -->
+  </main>
+</body>
+</html>

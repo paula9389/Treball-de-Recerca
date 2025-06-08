@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Costa d'Ivori</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    /* Nou estil per a les caixes */
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    /* Grid layout per les seccions dins main */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .intro-video {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
+    }
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #4d2600;
+      color: #fff4e5;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: 'Onest', sans-serif;
+      font-size: 0.9em;
+      border-top: 2px solid #d1bfa7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Costa d'Ivori</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <div class="grid-layout">
+
+      <!-- Introducció -->
+      <section class="box">
+        <h2>Introducció</h2>
+        <p>
+          Costa d’Ivori és coneguda per la seva vibrant escena musical i de dansa, amb estils com el Coupé-Décalé, popularitzat per artistes com DJ Arafat i Teeyah. La cultura ivoriana ha tingut un gran impacte a nivell africà i internacional.
+        </p>
+      </section>
+
+      <!-- Danses principals -->
+      <section class="box">
+        <h2>Danses principals</h2>
+
+        <article>
+          <h3>Zaouli</h3>
+          <p>
+            El Zaouli és una dansa tradicional del poble Guro (centre-oest de Costa d’Ivori), originària de les zones de Bouaflé i Béoumi cap al 1950. Es balla exclusivament per homes, amb màscares de fusta decorades i faldilles de rafia de colors vius. El moviment destaca per salts i desplaçaments ràpids de cames, mentre el tronc es manté pràcticament immòbil, sincronitzat amb tambors tradicionals. El Zaouli reforça la cohesió social i és patrimoni immaterial de la humanitat des del 2017.
+          </p>
+          <figure>
+            <img src="zaouli.jpg" alt="Dansa Zaouli">
+            <figcaption>Dansa Zaouli amb màscara tradicional</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Coupé-Décalé</h3>
+          <p>
+            El Coupé-Décalé és una dansa urbana nascuda a París a principis dels anys 2000 per la diàspora ivoriana. Simbolitza resistència i superació, amb moviments ràpids de peus, salts i gestos expressius. Els ballarins vesteixen roba cridanera i adopten l’actitud ‘sapeur’. Ha tingut una gran influència en la cultura juvenil africana, amb coreografies espontànies com el “konami” i el “boucantier”.
+          </p>
+          <figure>
+            <img src="coupe-decale.jpg" alt="Balladors de Coupé-Décalé">
+            <figcaption>Ballarins de Coupé-Décalé</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- Passos principals -->
+      <section class="box">
+        <h2>Passos principals</h2>
+
+        <article>
+          <h3>Maplôrly</h3>
+          <p>
+            El Maplôrly és un pas de dansa urbana vinculat al Coupé-Décalé, popularitzat per DJ Kedjevara el 2019. Originari d’Abidjan, combina moviments curts i rítmics de cames i braços. Representa una actitud de resistència i orgull de la joventut ivoriana, fàcil de replicar i viral a xarxes socials.
+          </p>
+         <div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/gExxYuQJTRE" 
+      title="Maplory" frameborder="0" allowfullscreen></iframe>
+  </div>
+        </article>
+
+        <article>
+          <h3>Dosabado</h3>
+          <p>
+            El Dosabado, creat per DJ Arafat el 2013, consisteix a pujar una espatlla alternant amb el moviment del cap. Simbolitza l’alegria i llibertat de la joventut urbana ivoriana. És present a discoteques, festivals i xarxes socials com a expressió icònica de la cultura Coupé-Décalé.
+          </p>
+           <div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/17dS0h3RHoo" 
+      title="Maplory" frameborder="0" allowfullscreen></iframe>
+  </div>
+<figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+      </section>
+
+      <!-- Impacte cultural -->
+      <section class="box">
+        <h2>Impacte cultural</h2>
+        <p>
+          Les danses de Costa d'Ivori són més que un entreteniment: reforcen la identitat comunitària i serveixen com a plataforma per a la crítica social. El Zaouli enllaça amb tradicions ancestrals, mentre el Coupé-Décalé i els seus passos han obert camí a moviments urbans i han influït altres gèneres d'Àfrica i la diàspora.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Web creada per al TDR © 2025</p>
+  </footer>
+</body>
+</html>

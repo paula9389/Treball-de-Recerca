@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gàmbia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    /* Nou estil per a les caixes */
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    /* Grid layout per les seccions dins main */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #4d2600;
+      color: #fff4e5;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: 'Onest', sans-serif;
+      font-size: 0.9em;
+      border-top: 2px solid #d1bfa7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Gàmbia</h1>
+    </div>
+  </header>
+
+   <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <div class="grid-layout">
+
+      <!-- Introducció -->
+      <section class="box">
+        <h2>Introducció</h2>
+        <p>
+          Tot i ser un dels països més petits d’Àfrica, Gàmbia destaca per la seva riquesa cultural en música i dansa. Diverses ètnies com les mandinga, wòlof i fula aporten ritmes i moviments únics, mentre l’escena urbana fusiona afrobeat, dancehall i hip-hop amb arrels tradicionals.
+        </p>
+      </section>
+
+      <!-- Danses principals -->
+      <section class="box">
+        <h2>Danses principals</h2>
+
+        <article>
+          <h3>Kumpo</h3>
+          <p>
+            El Kumpo és una figura mítica dels Jola, que apareix coberta amb fulles de palma seques i porta un bastó amb una bandera al cap. Ballant amb girs constants i música de tambors i cants corals, aquesta dansa ritual s’executa en cerimònies d’iniciació, casaments i festivals culturals per reforçar la unitat comunitària.
+          </p>
+          <figure>
+            <img src="kumpo.jpg" alt="Figura del Kumpo">
+            <figcaption>Figura del Kumpo</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Simba</h3>
+          <p>
+            El Simba (o Zimba) és una dansa wòlof que imita el lleó, simbolitzant força i valentia. Els ballarins porten vestits de pells, petxines i, a vegades, màscares fetes de pèl de vaca. Amb moviments ràpids i ferotges, interactuen amb el públic durant festivals, casaments i cerimònies d’iniciació, recordant la importància espiritual i cultural del lleó.
+          </p>
+          <figure>
+            <img src="simba.jpg" alt="Ballarí de Simba">
+            <figcaption>Ballarins de Simba</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- Passos -->
+      <section class="box">
+        <h2>Passos</h2>
+        <p>
+          A Gàmbia no s’han identificat passos de ball específics amb nom propi, ja que les danses tradicionals es conciben com a expressions col·lectives i rituals. Les tradicions es transmeten per via oral, i els moviments no es codifiquen en passos independents.
+        </p>
+      </section>
+
+      <!-- Impacte cultural -->
+      <section class="box">
+        <h2>Impacte cultural</h2>
+        <p>
+          Les danses de Gàmbia, com el Kumpo i el Simba, són elements centrals de cerimònies rituals i festes comunitàries. A més d’unir la gent, reforcen la identitat ètnica i espiritual. Tot i la modernització, aquestes tradicions continuen vives en festivals locals i contribueixen a la diversitat cultural d’Àfrica Occidental.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Web creada per al TDR © 2025</p>
+  </footer>
+</body>
+</html>

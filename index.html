@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Inici - Danses Africanes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importació de fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+FLF&display=swap" rel="stylesheet">
+
+  <!-- Fitxer CSS extern -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box; /* Inclou el padding i el border dins l'amplada i alçada totals */
+    }
+
+    .cuadro {
+      background-color: #f3e6d5;
+      padding: 20px;
+      margin: 30px auto; /* Centra el quadre a la pantalla */
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 99%;
+      max-width: 1200px;
+    }
+
+    /* Efecte d'agrandiment a les imatges */
+    .region img {
+      display: block;       /* Fa que la imatge es comporti com un bloc */
+      margin: 0 auto;       /* Centra la imatge */
+      max-width: 80%;       /* Redueix l'amplada màxima al 80% de la caixa */
+      height: auto;         /* Manté la proporció de la imatge */
+      min-height: 140px;    /* Alçada mínima reduïda */
+      object-fit: cover;    /* Retalla lleugerament per mantenir la proporció si cal */
+      transition: transform 0.3s ease; /* Suavitza l'agrandiment */
+    }
+
+    .region img:hover {
+      transform: scale(1.1); /* Augmenta la mida quan el ratolí hi passa per sobre */
+    }
+
+    .region {
+      display: inline-block; /* Mostra les imatges en línia */
+      width: 22%;            /* Cada imatge ocupa el 22% de l'ample */
+      margin: 10px;          /* Espai entre imatges */
+      text-align: center;    /* Centra el text sota la imatge */
+      vertical-align: top;
+    }
+
+    .region-text {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .clicar {
+      font-style: italic;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .region {
+        width: 45%; /* Mòbil: dues imatges per fila */
+      }
+      .region img {
+        max-width: 90%;
+        min-height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>DANSES AFRICANES</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="cuadro">
+      <h2>Benvinguts al món de les danses africanes</h2>
+      <p>Les danses africanes són molt més que moviments: són una forma poderosa d'expressió cultural, una finestra a la història, les creences i les tradicions de les diferents comunitats del continent africà.</p>
+      <p>Des dels ritmes contagiosos de Camerun fins a les danses plenes d'espiritualitat i connexió amb la natura de Ghana, cada pas i cada gest expliquen una història única.</p>
+      <p><strong>Estàs preparat per moure't al ritme de l'Àfrica?</strong></p>
+    </section>
+
+    <section id="mapa" class="cuadro">
+      <h2>Països treballats</h2>
+      <p>Fes clic sobre el país que t’interessi per descobrir més sobre les danses tradicionals i modernes.</p>
+
+      <div class="regions-container">
+        <!-- Camerun -->
+        <div class="region">
+          <h3>Camerun</h3>
+          <p class="region-text">Ritmes diversos que reflecteixen la gran varietat ètnica del país. Danses com el Bikutsi o l’Assiko en són exemples emblemàtics.</p>
+          <a href="camerun.html"><img src="camerun.png" alt="Camerun"></a>
+        </div>
+
+        <!-- RDC + Rep. del Congo -->
+        <div class="region">
+          <h3>RDC i República del Congo</h3>
+          <p class="region-text">El Ndombolo i el Soukous són danses modernes que han revolucionat l’escena musical de la regió.</p>
+          <a href="rdc-repcongo.html"><img src="rdc-repcongo.png" alt="RDC i Rep. del Congo"></a>
+        </div>
+
+        <!-- Marroc -->
+        <div class="region">
+          <h3>Marroc</h3>
+          <p class="region-text">Danses com l'Ahidous i el Chaabi representen la cultura amaziga i àrab amb una gran connexió espiritual.</p>
+          <a href="marroc.html"><img src="marroc.png" alt="Marroc"></a>
+        </div>
+
+        <!-- Sud-àfrica -->
+        <div class="region">
+          <h3>Sud-àfrica</h3>
+          <p class="region-text">Del Gumboot al Pantsula, les danses sud-africanes parlen de resistència, expressió i vida urbana.</p>
+          <a href="sudafrica.html"><img src="sudafrica.png" alt="Sud-àfrica"></a>
+        </div>
+
+        <!-- Costa d'Ivori -->
+        <div class="region">
+          <h3>Costa d'Ivori</h3>
+          <p class="region-text">Danses com el Zaouli són símbol d'identitat i tradició en les comunitats ivorianes; el Coupé-Décalé marca l'escena urbana.</p>
+          <a href="costa-divori.html"><img src="costa-divori.png" alt="Costa d'Ivori"></a>
+        </div>
+
+        <!-- Gàmbia -->
+        <div class="region">
+          <h3>Gàmbia</h3>
+          <p class="region-text">Amb danses com el Jola i el Mandinka, Gàmbia celebra els seus rituals ancestrals i la vida comunitària.</p>
+          <a href="gambia.html"><img src="gambia.png" alt="Gàmbia"></a>
+        </div>
+
+        <!-- Ghana -->
+        <div class="region">
+          <h3>Ghana</h3>
+          <p class="region-text">L’Adowa, Kpanlogo i Azonto mostren l'evolució de la dansa ghanesa des de l'espiritual fins al contemporani.</p>
+          <a href="ghana.html"><img src="ghana.png" alt="Ghana"></a>
+        </div>
+
+        <!-- Nigèria -->
+        <div class="region">
+          <h3>Nigèria</h3>
+          <p class="region-text">Amb danses com el Bata i moviments d'afrobeat moderns, Nigèria és un centre cultural dinàmic.</p>
+          <a href="nigeria.html"><img src="nigeria.png" alt="Nigèria"></a>
+        </div>
+      </div>
+
+      <p class="clicar">Clica qualsevol imatge per descobrir més</p>
+    </section>
+
+   <section id="videos" class="cuadro">
+  <h2>Vídeos</h2>
+  <p>Aquí podràs veure els vídeos explicatius dels diferents passos.</p>
+
+  <section class="box">
+
+    <!-- RDC i Rep. Congo -->
+    <article>
+      <h3>RDC i Rep. Congo</h3>
+      <h4>Tindika Lokito</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/UrKLgYuPCB4" 
+          title="Tindika Lokito" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <!-- Sud-àfrica -->
+    <article>
+      <h3>Sud-Àfrica</h3>
+      <h4>Dakiwe</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/8dKkFXF1rbE" 
+          title="Dakiwe" frameborder="0" allowfullscreen></iframe>
+      </div>
+ <figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+
+      <h4>Vosho</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/t8MWAggXBQ0" 
+          title="Vosho" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h4>Gwara Gwara</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/tQW9Yz31whY" 
+          title="Gwara Gwara" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <!-- Ghana -->
+    <article>
+      <h3>Ghana</h3>
+      <h4>Pilolo</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1uRN6uOC4iA" 
+          title="Pilolo" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h4>Kupe</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YwNrkv99RXo" 
+          title="Kupe" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h4>Network</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/EAP0w4qFdsY" 
+          title="Network" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+    </article>
+
+    <!-- Nigèria -->
+    <article>
+      <h3>Nigèria</h3>
+      <h4>Shaku Shaku</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/gYdRzClHbI4" 
+          title="Shaku Shaku" frameborder="0" allowfullscreen></iframe>
+      </div>
+ <figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+
+      <h4>Skelewu</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1hAiAiLc4IQ" 
+          title="Skelewu" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h4>Shoki</h4>
+      <div class="youtube-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1RuQNjAxEMU" 
+          title="Shoki" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+    </article>
+
+  </section>
+</section>
+
+<!-- Footer separat amb espai -->
+<footer id="contacte" style="margin-top: 3rem;">
+  <p>Web creada per al TDR © 2025</p>
+</footer>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marroc</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .intro-video {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
+    }
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #4d2600;
+      color: #fff4e5;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: 'Onest', sans-serif;
+      font-size: 0.9em;
+      border-top: 2px solid #d1bfa7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Marroc</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <div class="grid-layout">
+
+
+      <section>
+        <p>
+          El Marroc destaca per la seva rica diversitat cultural, on les danses reflecteixen influències àrabs, andalusines i amazigues, i són una expressió important de la identitat local.
+        </p>
+      </section>
+
+      <section>
+        <h2>Danses principals</h2>
+
+        <article>
+          <h3>Chaabi</h3>
+          <p>
+            Estil popular i urbà sorgit als anys 30, el Chaabi combina música i dansa amb poesia en àrab marroquí. Es balla en celebracions i festivals, expressant alegria i comunitat. La vestimenta tradicional inclou el caftan per a dones i djellabs per a homes.
+          </p>
+          <figure>
+            <img src="chaabi.jpg" alt="Balladors de Chaabi" />
+            <figcaption>Ballarins de Chaabi</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Ahwach</h3>
+          <p>
+            Dansa amaziga col·lectiva de les regions muntanyoses, l’Ahwach uneix música, dansa i poesia en cercles o files paral·leles. Amb moviments sincronitzats i vestimenta tradicional vistosa, és una forma de resistència cultural i es manté viva a festivals locals.
+          </p>
+          <figure>
+            <img src="ahwach.jpg" alt="Grup realitzant l’Ahwach" />
+            <figcaption>Grup realitzant l’Ahwach</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section>
+        <h2>Passos</h2>
+        <p>
+          Les danses marroquines no tenen passos amb noms específics ni difusió global; són moviments integrats en la coreografia general, sovint transmesos oralment. Alguns moviments típics inclouen torsions de pelvis i gestos que imiten la natura, però no estan formalment nomenats.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Web creada per al TDR © 2025</p>
+  </footer>
+</body>
+</html>

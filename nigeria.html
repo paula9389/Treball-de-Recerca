@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nigèria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Bodoni FLF';
+      src: url('BodoniFLF-Roman.ttf') format('truetype');
+    }
+    .header-banner {
+      background-image: url('banner_africa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-overlay {
+      background-color: rgba(255, 244, 229, 0.85);
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .banner-overlay h1 {
+      font-family: 'Bodoni FLF', serif;
+      color: #4d2600;
+      font-size: 42px;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      font-family: 'Onest', sans-serif;
+      color: #3b2f2f;
+      line-height: 1.6;
+    }
+    main > section {
+      background-color: #fff9f0;
+      border: 1px solid #d1bfa7;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    figcaption {
+      font-size: 0.9em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+      color: #3b2f2f;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .intro-video {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
+    }
+    .intro-video:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #4d2600;
+      color: #fff4e5;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: 'Onest', sans-serif;
+      font-size: 0.9em;
+      border-top: 2px solid #d1bfa7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body class="africa-austral">
+  <header class="header-banner">
+    <div class="banner-overlay">
+      <h1>Nigèria</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="index.html#mapa">Mapa</a>
+    <a href="index.html#videos">Vídeos</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
+
+  <main>
+    <div class="grid-layout">
+
+      <!-- Context inicial -->
+      <section class="box">
+        <p>
+          Nigèria és un dels països més influents d’Àfrica, amb més de 200 milions d’habitants i gran diversitat ètnica. Les seves danses tradicionals formen part essencial de rituals, festes i cerimònies, mentre que l’Afrobeats modern ha donat lloc a nous passos i coreografies virals.
+        </p>
+      </section>
+
+      <!-- Danses principals -->
+      <section class="box">
+        <h2>Danses principals</h2>
+
+        <article>
+          <h3>Atilogwu</h3>
+          <p>
+            Dansa acrobàtica de la cultura igbo, amb salts, girs i equilibris que sorprenen per la seva destresa física. Ballada en festivals, casaments i cerimònies, acompanyada per instruments com l’ogene i l’okpola.
+          </p>
+          <figure>
+            <img src="atilogwu.jpg" alt="Ballarins de l’Atilogwu">
+            <figcaption>Grup de ballarins d’Atilogwu fent acrobàcies</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Koroso</h3>
+          <p>
+            Emblemàtica del nord de Nigèria entre Hausa i Fulani, amb salts i moviments ràpids de peus al ritme dels tambors i la flauta Sarewa. Els ballarins porten sonalls als turmells que marquen el tempo.
+          </p>
+          <figure>
+            <img src="koroso.png" alt="Ballarins de Koroso">
+            <figcaption>Grup practicant la dansa Koroso</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Zanku (Legwork)</h3>
+          <p>
+            Estil urbà creat per Zlatan Ibile, combina moviments ràpids de peus (“legwork”) amb gestos coordinats de braços. Popular a clubs i xarxes socials, representa l’energia de l’Afrobeats nigerià.
+          </p>
+          <figure>
+            <img src="zanku.jpg" alt="Ballarins de Zanku">
+            <figcaption>Ballarins interpretant el Zanku</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- Passos treballats -->
+      <section class="box">
+        <h2>Passos treballats</h2>
+
+        <article>
+          <h3>Shaku Shaku</h3>
+          <p>
+            Pas urbà dels carrers de Lagos, amb cos lleugerament inclinat i moviments de braços creuats, combinat amb passos ràpids de peus i petits salts. Ha transcendit festivals internacionals.
+          </p>
+  <div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/gYdRzClHbI4" 
+      title="Vosho" frameborder="0" allowfullscreen></iframe>
+  </div>
+<figcaption>Clica a "Veure a Youtube" si el vídeo no surt disponible</figcaption>
+        </article>
+
+        <article>
+          <h3>Skelewu</h3>
+          <p>
+            Pas viral creat per Davido el 2013, amb moviments fluids de pit i peus que es mouen lateralment. Acompanyat pel videoclip tutorial, es va estendre ràpidament a Xarxes Socials.
+          </p>
+          <div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/1hAiAiLc4IQ" 
+      title="Vosho" frameborder="0" allowfullscreen></iframe>
+  </div>
+        </article>
+
+        <article>
+          <h3>Shoki</h3>
+          <p>
+            Popularitzat per Lil Kesh el 2014, amb els braços a un costat del cos i moviment alternant de genolls. Ha aparegut en videoclips i festivals, i segueix ballant-se en esdeveniments urbans.
+          </p>
+          <div class="youtube-video">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/1RuQNjAxEMU" 
+      title="Vosho" frameborder="0" allowfullscreen></iframe>
+  </div>
+        </article>
+      </section>
+
+      <!-- Impacte cultural -->
+      <section class="box">
+        <h2>Impacte cultural</h2>
+        <p>
+          Les danses nigerianes tradicionals i urbanes, des de l’Atilogwu fins al Shaku Shaku, continuen definint la identitat col·lectiva. A més de preservar pràctiques ancestrals, han influït la cultura global a través d’Afrobeats i xarxes socials, consolidant Nigèria com a centre cultural d’Àfrica.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Web creada per al TDR © 2025</p>
+  </footer>
+</body>
+</html>
